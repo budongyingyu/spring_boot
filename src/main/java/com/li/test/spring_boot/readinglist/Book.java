@@ -1,4 +1,4 @@
-package readinglist;
+package com.li.test.spring_boot.readinglist;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
