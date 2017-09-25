@@ -23,9 +23,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
         //“/”的请求只有经过身份认证且拥有READER角色的用户才能访问
-        .antMatchers("/").access("hasRole('READER')")
+        .antMatchers("/**").access("hasRole('READER')")
         //剩余请求开放访问权限
-        .antMatchers("/**").permitAll()
+//        .antMatchers("/**").permitAll()
         .and()
         .formLogin()
         .loginPage("/login")//设置登录表单的路径

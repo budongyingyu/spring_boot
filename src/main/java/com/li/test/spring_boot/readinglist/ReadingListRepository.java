@@ -1,5 +1,7 @@
 package com.li.test.spring_boot.readinglist;
 import java.util.List;
+
+import org.hibernate.annotations.SQLUpdate;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
